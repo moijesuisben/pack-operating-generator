@@ -1,0 +1,113 @@
+{
+  "header": {
+    "language": {
+      "placeholder": "Choice of language…"
+    },
+    "title": "Pack Operating",
+    "description": "An extension of your operational teams",
+    "engagement": {
+      "choice": {
+        "placeholder": "Period…",
+        "6months": "6 months",
+        "12months": "12 months"
+      },
+      "label": "Commitment"
+    },
+    "marketplace": {
+      "placeholder": "Name of the marketplace…",
+      "buttonLabel": "Confirm",
+      "label": "Marketplace"
+    },
+    "price": {
+      "placeholder": "Price + currency…",
+      "buttonLabel": "Confirm",
+      "label": "Price"
+    }
+  },
+  "cards": {
+    "callPlaceholder": "Number of calls…",
+    "duration": {
+      "placeholder": "Call duration…",
+      "30min": "30 minutes",
+      "1h": "1 hours",
+      "1h30": "1 hours 30 minutes"
+    }
+  },
+  "marketplaceLaunch": {
+    "call": {
+      "frequency": "Call / week"
+    },
+    "duration": {
+      "time": "3 months",
+      "label": "Duration"
+    },
+    "referent": {
+      "person": "Agent Operating",
+      "label": "Referent"
+    },
+    "topics": {
+      "label": "Topics",
+      "topics1": "Setting of categories and attributes",
+      "topics2": "Help in correcting the error report"
+    },
+    "name": "Marketplace launch"
+  },
+  "maintainRun": {
+    "call": {
+      "frequency": "Call / month"
+    },
+    "duration": {
+      "time": "Contract",
+      "label": "Duration"
+    },
+    "referent": {
+      "person": "Agent Operating",
+      "label": "Referent"
+    },
+    "topics": {
+      "label": "Topics",
+      "topics1": "Integration and update of new catalog references",
+      "topics2": "Implementation of rules",
+      "topics3": "Exclusions",
+      "topics4": "Minor modifications"
+    },
+    "name": "Maintain the run"
+  },
+  "commercialOperation": {
+    "call": {
+      "frequency": "Call / week"
+    },
+    "duration": {
+      "time": "Commercial Operation",
+      "label": "Duration"
+    },
+    "referent": {
+      "person": "Agent Operating",
+      "label": "Referent"
+    },
+    "topics": {
+      "label": "Topics",
+      "topics1": "Setting up the highlights of the year (Black Friday, Sales, Christmas, French Days…)",
+      "topics2": "Launching the highlights on the day"
+    },
+    "name": "Commercial Operation"
+  },
+  "training": {
+    "call": {
+      "frequency": "Per year"
+    },
+    "duration": {
+      "time": "Commercial Operation",
+      "label": "Duration"
+    },
+    "referent": {
+      "person": "Agent Customer Success",
+      "label": "Referent"
+    },
+    "topics": {
+      "label": "Topics",
+      "topics1": "General training on the Lengow tool"
+    },
+    "name": "Training"
+  }
+}

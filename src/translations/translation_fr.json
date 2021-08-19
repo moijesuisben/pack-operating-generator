@@ -1,0 +1,113 @@
+{
+  "header": {
+    "language": {
+      "placeholder": "Choix de la langue…"
+    },
+    "title": "Pack Operating",
+    "description": "Une extension de vos équipes opérationelles",
+    "engagement": {
+      "choice": {
+        "placeholder": "Durée…",
+        "6months": "6 mois",
+        "12months": "12 mois"
+      },
+      "label": "Engagement"
+    },
+    "marketplace": {
+      "placeholder": "Nom de la marketplace…",
+      "buttonLabel": "Valider",
+      "label": "Marketplace"
+    },
+    "price": {
+      "placeholder": "Prix + devise…",
+      "buttonLabel": "Valider",
+      "label": "Prix"
+    }
+  },
+  "cards": {
+    "callPlaceholder": "Nombre d'appel…",
+    "duration": {
+      "placeholder": "Durée de l'appel…",
+      "30min": "30 minutes",
+      "1h": "1 heure",
+      "1h30": "1 heure 30 minutes"
+    }
+  },
+  "marketplaceLaunch": {
+    "call": {
+      "frequency": "Appel / semaine"
+    },
+    "duration": {
+      "time": "3 mois",
+      "label": "Durée"
+    },
+    "referent": {
+      "person": "Agent Operating",
+      "label": "Réferent"
+    },
+    "topics": {
+      "label": "Thématiques",
+      "topics1": "Paramétrage des catégories et des attributs",
+      "topics2": "Aide à la correction du rapport d'erreur"
+    },
+    "name": "Lancement marketplace"
+  },
+  "maintainRun": {
+    "call": {
+      "frequency": "Appel / mois"
+    },
+    "duration": {
+      "time": "Contrat",
+      "label": "Durée"
+    },
+    "referent": {
+      "person": "Agent Operating",
+      "label": "Réferent"
+    },
+    "topics": {
+      "label": "Thématiques",
+      "topics1": "Intégration et mise à jour de nouvelles références du catalogue",
+      "topics2": "Mise en place de régles",
+      "topics3": "Exclusions",
+      "topics4": "Modifications mineurs"
+    },
+    "name": "Maintien du run"
+  },
+  "commercialOperation": {
+    "call": {
+      "frequency": "Call / week"
+    },
+    "duration": {
+      "time": "Commercial Operation",
+      "label": "Durée"
+    },
+    "referent": {
+      "person": "Agent Operating",
+      "label": "Réferent"
+    },
+    "topics": {
+      "label": "Thématiques",
+      "topics1": "Configuration des temps forts de l'année (Black Friday, Soldes, Noel, French Days...)",
+      "topics2": "Lancement des temps forts le jour J"
+    },
+    "name": "Opérations commerciales"
+  },
+  "training": {
+    "call": {
+      "frequency": "Par an"
+    },
+    "duration": {
+      "time": "Opération commerciale",
+      "label": "Durée"
+    },
+    "referent": {
+      "person": "Agent Customer Success",
+      "label": "Réferent"
+    },
+    "topics": {
+      "label": "Thématiques",
+      "topics1": "Formation générale à l'outil Lengow"
+    },
+    "name": "Training"
+  }
+}
