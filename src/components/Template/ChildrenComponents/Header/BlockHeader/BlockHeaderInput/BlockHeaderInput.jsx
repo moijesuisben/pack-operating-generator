@@ -14,12 +14,8 @@ export default function BlockHeaderInput({
   const [form, setForm] = React.useState(true);
 
   const handleSubmitBlockHeaderInput = (event) => {
-    if (input === "" || " ") {
-      console.log("top");
-    } else {
-      event.preventDefault();
-      setForm(false);
-    }
+    event.preventDefault();
+    setForm(false);
   };
 
   return (

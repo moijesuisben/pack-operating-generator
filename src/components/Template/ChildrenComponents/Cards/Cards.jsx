@@ -11,6 +11,14 @@ import Bg4Top from "../../../../media/bg_4_top.png";
 import Bg4Bottom from "../../../../media/bg_4_bottom.png";
 
 export default function Cards({
+  card1,
+  card2,
+  card3,
+  card4,
+  handleClickButton1,
+  handleClickButton2,
+  handleClickButton3,
+  handleClickButton4,
   marketplaceLaunchLabel,
   marketplaceLaunchDurationInformation,
   marketplaceLaunchDurationLabel,
@@ -45,13 +53,15 @@ export default function Cards({
   trainingName,
   numberPlaceholder,
   timePlaceholder,
-  timeOptions
+  timeOptions,
 }) {
   const classes = useStylesCards();
 
   return (
     <div className={classes.cards_container}>
       <Card
+        card={card1}
+        handleClickButton={handleClickButton1}
         bgTop={Bg1Top}
         bgBottom={Bg1Bottom}
         callLabel={marketplaceLaunchLabel}
@@ -67,6 +77,8 @@ export default function Cards({
         timeOptions={timeOptions}
       />
       <Card
+        card={card2}
+        handleClickButton={handleClickButton2}
         bgTop={Bg2Top}
         bgBottom={Bg2Bottom}
         callLabel={maintainRunLabel}
@@ -83,6 +95,8 @@ export default function Cards({
       />
       {
         <Card
+          card={card3}
+          handleClickButton={handleClickButton3}
           bgTop={Bg3Top}
           bgBottom={Bg3Bottom}
           callLabel={commercialOperationLabel}
@@ -99,6 +113,8 @@ export default function Cards({
         />
       }
       <Card
+        card={card4}
+        handleClickButton={handleClickButton4}
         bgTop={Bg4Top}
         bgBottom={Bg4Bottom}
         callLabel={trainingLabel}

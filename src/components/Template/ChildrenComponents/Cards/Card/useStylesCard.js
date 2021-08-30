@@ -3,6 +3,28 @@ import { createUseStyles } from "react-jss";
 const useStylesCard = createUseStyles({
   card_item: {},
 
+  card_button_delete: {
+    width: "100%",
+    display: "flex",
+    justifyContent: "center",
+    marginBottom: "1vh",
+    "& > *": {
+      padding: "7px 15px",
+      backgroundColor: "inherit",
+      border: "1px solid #495057",
+      borderRadius: "5px",
+      fontFamily: "Montserrat",
+      fontWeight: 600,
+      color: "#495057",
+    },
+    "& > *:hover": {
+      cursor: "pointer",
+      backgroundColor: "#ec7677",
+      borderColor: "#ec7677",
+      color: "#FFFFFF",
+    },
+  },
+
   card_container: {
     backgroundPosition: "center",
     backgroundSize: "cover",

@@ -1,9 +1,12 @@
 import React from "react";
+import clsx from "clsx";
 import Select from "react-select";
 import customSelect from "../../../../../styles/customSelect";
 import useStylesCard from "./useStylesCard";
 
 export default function Card({
+  card,
+  handleClickButton,
   bgTop,
   bgBottom,
   callLabel,
@@ -19,7 +22,7 @@ export default function Card({
   cardTitle,
   numberPlaceholder,
   timePlaceholder,
-  timeOptions
+  timeOptions,
 }) {
   const classes = useStylesCard();
   const [number, setNumber] = React.useState(null);
@@ -31,60 +34,70 @@ export default function Card({
   ];
 
   return (
-    <div className={classes.card_item}>
-      <div
-        className={classes.card_container}
-        style={{ backgroundImage: `url(${bgTop})` }}
-      >
-        <div className={classes.card_block}>
-          {!number ? (
-            <Select
-              options={numberOptions}
-              defaultValue={number}
-              onChange={setNumber}
-              placeholder={numberPlaceholder}
-              styles={customSelect}
-            />
-          ) : (
-            <p className={classes.card_information}>{number.value}</p>
-          )}
-          <p className={classes.card_label}>{callLabel}</p>
-          {!duration ? (
-            <Select
-              options={timeOptions}
-              defaultValue={duration}
-              onChange={setDuration}
-              placeholder={timePlaceholder}
-              styles={customSelect}
-            />
-          ) : (
-            <p className={classes.card_time}>{duration.label}</p>
-          )}
-        </div>
-        <div className={classes.card_block}>
-          <p className={classes.card_information}>{durationInformation}</p>
-          <p className={classes.card_label}>{durationLabel}</p>
-        </div>
-        <div className={classes.card_block}>
-          <p className={classes.card_information}>{referentInformation}</p>
-          <p className={classes.card_label}>{referentLabel}</p>
-        </div>
-      </div>
+    <>
+      {card ? (
+        <div className={classes.card_item}>
+          <div className={clsx(classes.card_button_delete, "print_hidden")}>
+            <button onClick={handleClickButton}>Supprimer la colonne</button>
+          </div>
+          <div
+            className={classes.card_container}
+            style={{ backgroundImage: `url(${bgTop})` }}
+          >
+            <div className={classes.card_block}>
+              {!number ? (
+                <Select
+                  options={numberOptions}
+                  defaultValue={number}
+                  onChange={setNumber}
+                  placeholder={numberPlaceholder}
+                  styles={customSelect}
+                />
+              ) : (
+                <p className={classes.card_information}>{number.value}</p>
+              )}
+              <p className={classes.card_label}>{callLabel}</p>
+              {!duration ? (
+                <Select
+                  options={timeOptions}
+                  defaultValue={duration}
+                  onChange={setDuration}
+                  placeholder={timePlaceholder}
+                  styles={customSelect}
+                />
+              ) : (
+                <p className={classes.card_time}>{duration.label}</p>
+              )}
+            </div>
+            <div className={classes.card_block}>
+              <p className={classes.card_information}>{durationInformation}</p>
+              <p className={classes.card_label}>{durationLabel}</p>
+            </div>
+            <div className={classes.card_block}>
+              <p className={classes.card_information}>{referentInformation}</p>
+              <p className={classes.card_label}>{referentLabel}</p>
+            </div>
+          </div>
 
-      <div className={classes.card_container} style={{ backgroundImage: `url(${bgBottom})` }}>
-        <div className={classes.card_block}>
-          <p className={classes.card_label}>{topicsLabel}</p>
-          <ul className={classes.card_listTopics}>
-            {listTopicsMarketplaceLaunch ||
-              listTopicsMaintainRun ||
-              listTopicsCommercialOperation ||
-              listTopicsTraining}
-          </ul>
+          <div
+            className={classes.card_container}
+            style={{ backgroundImage: `url(${bgBottom})` }}
+          >
+            <div className={classes.card_block}>
+              <p className={classes.card_label}>{topicsLabel}</p>
+              <ul className={classes.card_listTopics}>
+                {listTopicsMarketplaceLaunch ||
+                  listTopicsMaintainRun ||
+                  listTopicsCommercialOperation ||
+                  listTopicsTraining}
+              </ul>
+            </div>
+            <div className={classes.card_block}>
+              <p className={classes.card_title}>{cardTitle}</p>
+            </div>
+          </div>
         </div>
-        <div className={classes.card_block}>
-          <p className={classes.card_title}>{cardTitle}</p>
-        </div>
-      </div>
-    </div>
+      ) : null}
+    </>
   );
 }

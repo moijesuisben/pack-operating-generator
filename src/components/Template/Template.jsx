@@ -7,7 +7,26 @@ import useStylesTemplate from "./useStylesTemplate";
 
 export default function Template() {
   const classes = useStylesTemplate();
+  const [card1, setCard1] = React.useState(true);
+  const [card2, setCard2] = React.useState(true);
+  const [card3, setCard3] = React.useState(true);
+  const [card4, setCard4] = React.useState(true);
 
+  const handleClickButton1 = () => {
+    setCard1(false);
+  };
+
+  const handleClickButton2 = () => {
+    setCard2(false);
+  };
+
+  const handleClickButton3 = () => {
+    setCard3(false);
+  };
+
+  const handleClickButton4 = () => {
+    setCard4(false);
+  };
   // Language Settings
   const [language, setLanguage] = React.useState(null);
   const languageOptions = [
@@ -118,6 +137,14 @@ export default function Template() {
         headerNamePriceLabel={languageSelected().header.price.label}
       />
       <Cards
+        card1={card1}
+        card2={card2}
+        card3={card3}
+        card4={card4}
+        handleClickButton1={handleClickButton1}
+        handleClickButton2={handleClickButton2}
+        handleClickButton3={handleClickButton3}
+        handleClickButton4={handleClickButton4}
         marketplaceLaunchLabel={
           languageSelected().marketplaceLaunch.call.frequency
         }
