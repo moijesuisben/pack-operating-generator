@@ -45,6 +45,24 @@ export default function Card({
             style={{ backgroundImage: `url(${bgTop})` }}
           >
             <div className={classes.card_block}>
+              <p className={classes.card_title}>{cardTitle}</p>
+            </div>
+            <div className={classes.card_block}>
+              <p className={classes.card_label}>{topicsLabel}</p>
+              <ul className={classes.card_listTopics}>
+                {listTopicsMarketplaceLaunch ||
+                  listTopicsMaintainRun ||
+                  listTopicsCommercialOperation ||
+                  listTopicsTraining}
+              </ul>
+            </div>
+          </div>
+
+          <div
+            className={classes.card_container}
+            style={{ backgroundImage: `url(${bgBottom})` }}
+          >
+            <div className={classes.card_block}>
               {!number ? (
                 <Select
                   options={numberOptions}
@@ -76,24 +94,6 @@ export default function Card({
             <div className={classes.card_block}>
               <p className={classes.card_information}>{referentInformation}</p>
               <p className={classes.card_label}>{referentLabel}</p>
-            </div>
-          </div>
-
-          <div
-            className={classes.card_container}
-            style={{ backgroundImage: `url(${bgBottom})` }}
-          >
-            <div className={classes.card_block}>
-              <p className={classes.card_label}>{topicsLabel}</p>
-              <ul className={classes.card_listTopics}>
-                {listTopicsMarketplaceLaunch ||
-                  listTopicsMaintainRun ||
-                  listTopicsCommercialOperation ||
-                  listTopicsTraining}
-              </ul>
-            </div>
-            <div className={classes.card_block}>
-              <p className={classes.card_title}>{cardTitle}</p>
             </div>
           </div>
         </div>

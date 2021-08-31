@@ -37,7 +37,7 @@ const useStylesCard = createUseStyles({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    justifyContent: "space-between",
+    justifyContent: "flex-start",
     textAlign: "center",
   },
 
