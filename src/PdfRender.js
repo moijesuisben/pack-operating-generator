@@ -3,8 +3,6 @@ import Template from "./components/Template/Template";
 
 
 export default function PdfRender() {
-  const [print, setPrint] = React.useState(true);
-
   return (
     <>
       <Template />
