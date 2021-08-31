@@ -17,5 +17,6 @@ html {
   }
   .print_hidden {
     visibility: hidden;
+    display: none;
   }
 }

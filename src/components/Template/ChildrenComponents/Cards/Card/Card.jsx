@@ -6,6 +6,7 @@ import useStylesCard from "./useStylesCard";
 
 export default function Card({
   card,
+  deleteColumnLabel,
   handleClickButton,
   bgTop,
   bgBottom,
@@ -38,7 +39,7 @@ export default function Card({
       {card ? (
         <div className={classes.card_item}>
           <div className={clsx(classes.card_button_delete, "print_hidden")}>
-            <button onClick={handleClickButton}>Supprimer la colonne</button>
+            <button onClick={handleClickButton}>{deleteColumnLabel}</button>
           </div>
           <div
             className={classes.card_container}

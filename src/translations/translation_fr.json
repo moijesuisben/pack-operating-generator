@@ -1,5 +1,6 @@
 {
   "header": {
+    "printButton": "Imprimer la grille !",
     "language": {
       "placeholder": "Choix de la langue…"
     },
@@ -25,6 +26,7 @@
     }
   },
   "cards": {
+    "deleteColumn": "Supprimer la colonne",
     "callPlaceholder": "Nombre d'appel…",
     "duration": {
       "placeholder": "Durée de l'appel…",

@@ -1,5 +1,6 @@
 {
   "header": {
+    "printButton": "Print the grid !",
     "language": {
       "placeholder": "Choice of language…"
     },
@@ -25,6 +26,7 @@
     }
   },
   "cards": {
+    "deleteColumn": "Delete the column",
     "callPlaceholder": "Number of calls…",
     "duration": {
       "placeholder": "Call duration…",

@@ -15,6 +15,7 @@ export default function Cards({
   card2,
   card3,
   card4,
+  deleteColumnLabel,
   handleClickButton1,
   handleClickButton2,
   handleClickButton3,
@@ -61,6 +62,7 @@ export default function Cards({
     <div className={classes.cards_container}>
       <Card
         card={card1}
+        deleteColumnLabel={deleteColumnLabel}
         handleClickButton={handleClickButton1}
         bgTop={Bg1Top}
         bgBottom={Bg1Bottom}
@@ -78,6 +80,7 @@ export default function Cards({
       />
       <Card
         card={card2}
+        deleteColumnLabel={deleteColumnLabel}
         handleClickButton={handleClickButton2}
         bgTop={Bg2Top}
         bgBottom={Bg2Bottom}
@@ -96,6 +99,7 @@ export default function Cards({
       {
         <Card
           card={card3}
+          deleteColumnLabel={deleteColumnLabel}
           handleClickButton={handleClickButton3}
           bgTop={Bg3Top}
           bgBottom={Bg3Bottom}
@@ -114,6 +118,7 @@ export default function Cards({
       }
       <Card
         card={card4}
+        deleteColumnLabel={deleteColumnLabel}
         handleClickButton={handleClickButton4}
         bgTop={Bg4Top}
         bgBottom={Bg4Bottom}

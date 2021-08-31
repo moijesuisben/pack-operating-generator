@@ -110,6 +110,7 @@ export default function Template() {
   return (
     <>
       <Header
+        printButtonLabel={languageSelected().header.printButton}
         languageOptions={languageOptions}
         languageDefaultValue={language}
         languageOnChange={setLanguage}
@@ -141,6 +142,7 @@ export default function Template() {
         card2={card2}
         card3={card3}
         card4={card4}
+        deleteColumnLabel={languageSelected().cards.deleteColumn}
         handleClickButton1={handleClickButton1}
         handleClickButton2={handleClickButton2}
         handleClickButton3={handleClickButton3}

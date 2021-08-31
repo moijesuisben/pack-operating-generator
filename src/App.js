@@ -1,14 +1,10 @@
 import "./App.css";
-//import PdfReader from './components/PdfReader/PdfReader';
-// import Template from "./components/Template/Template";
-import PdfRender from "./PdfRender";
-
+import Template from "./components/Template/Template";
 
 function App() {
   return (
     <div className="App">
-      {/* <Template /> */}
-      <PdfRender />
+      <Template />
     </div>
   );
 }

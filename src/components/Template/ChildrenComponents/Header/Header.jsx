@@ -3,8 +3,10 @@ import Select from "react-select";
 import clsx from "clsx";
 import BlockHeader from "./BlockHeader/BlockHeader";
 import useStylesHeader from "./useStylesHeader";
+import PrintButton from "./PrintButton/PrintButton";
 
 export default function Header({
+  printButtonLabel,
   languageOptions,
   languageDefaultValue,
   languageOnChange,
@@ -27,6 +29,7 @@ export default function Header({
 
   return (
     <div className={classes.header_container}>
+      <PrintButton printButtonLabel={printButtonLabel} />
       {!languageDefaultValue ? (
         <Select
           className={clsx(classes.header_languageSelect, "print_hidden")}
